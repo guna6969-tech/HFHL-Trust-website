@@ -8,16 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
           image.addEventListener("click", function () {
             popupImage.src = this.src;
             popup.style.display = "flex";
+            document.getElementsByClassName("nav-bar")[0].style.display = "none";
           });
         });
 
         closeButton.addEventListener("click", function () {
           popup.style.display = "none";
+          document.getElementsByClassName("nav-bar")[0].style.display = "flex";
         });
 
         popup.addEventListener("click", function (e) {
           if (e.target === this) {
             this.style.display = "none";
+            document.getElementsByClassName("nav-bar")[0].style.display = "flex";
           }
         });
       });
