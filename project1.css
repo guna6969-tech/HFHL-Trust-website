@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background: linear-gradient(45deg, #ffff00, #ffffff, #ffff00, #ffffff);
+}
+
+.contacts {
+  background-color: #ffff00;
+}
+.contacts a {
+  text-decoration: none;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  background-color: #800000;
+  color: #800000;
+}
+
+.heading {
+  background-color: #ffff00;
+  flex-grow: 1;
+  text-align: center;
+}
+.nav-bar {
+  background: linear-gradient(45deg, #ffff00, #ffffff, #ffff00, #ffffff);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: #800000;
+  font-size: 20px;
+  padding: 5px;
+}
+.row1 {
+  background: linear-gradient(45deg, #ffff00, #ffffff, #ffff00, #ffffff);
+  display: flex;
+}
+.side1 {
+  flex: 30%;
+  padding: 20px;
+  align-self: center;
+  text-align: center;
+}
+.side2 {
+  flex: 70%;
+  padding: 0px;
+  position: relative;
+}
+.row2 {
+  background: linear-gradient(45deg, #ffff00, #ffffff, #ffff00, #ffffff);
+  text-align: justify;
+  text-indent: 25%;
+}
+.row2 p {
+  margin: 0;
+  font-size: 17px;
+  padding: 10px;
+}
+.whatsapp_float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #800000; /* Maroon */
+  color: #ffff00; /* Yellow */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  z-index: 100;
+  text-indent: 0; /* Reset text indent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp_float:hover {
+  transform: scale(1.1);
+  background-color: #a00000; /* Slightly brighter maroon on hover */
+}
+
+@media (max-width: 600px) {
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+.row3 {
+  background: linear-gradient(45deg, #ffff00, #ffffff, #ffff00, #ffffff);
+  text-align: center;
+}
+.row4 {
+  background: linear-gradient(45deg, #ffff00, #ffffff, #ffff00, #ffffff);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  gap: 20px;
+  padding: 0px;
+}
+.row4 p {
+  flex: 40%;
+  align-self: center;
+  text-align: center;
+  text-align: justify;
+  text-indent: 25%;
+  font-size: 17px;
+  padding: 10px;
+}
+.card1 {
+  flex: 25%;
+  height: 75%;
+}
+.card2 {
+  flex: 25%;
+  height: 75%;
+}
+#one {
+  height: 500px;
+}
+#two {
+  height: 500px;
+}
+.card3 {
+  height: 50%;
+  align-self: center;
+}
+.card5 {
+  height: 50%;
+  align-self: center;
+}
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover {
+  transform: scale(1.1);
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #ffff00, #ffffff, #ffff00, #ffffff);
+  text-align: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 5px solid #ccc;
+  border-radius: 30px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gs {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.service {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #800000;
+}
+
+.desc {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #333;
+}
+.row5 {
+  display: flex;
+  gap: 20px;
+}
+.row6 {
+  background: linear-gradient(
+    25deg,
+    #800000,
+    #ffff00,
+    #ffffff,
+    #ffff00,
+    #ffffff,
+    #800000
+  );
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.c1,
+.c2,
+.c3,
+.c4 {
+  width: 300px;
+  height: 350px;
+  background-color: aliceblue;
+  padding: 15px;
+  border: 5px solid #ccc;
+  border-radius: 30px;
+  margin: 20px 0px;
+  text-align: center;
+}
+.who {
+  width: 100%;
+  height: 55%;
+}
+.how,
+.where,
+.join {
+  width: 100%;
+  height: 55%;
+}
+form.data {
+  width: 400px;
+  margin: auto;
+  padding: 6px;
+  background: linear-gradient(
+    25deg,
+    #800000,
+    #ffff00,
+    #ffffff,
+    #ffff00,
+    #ffffff,
+    #800000
+  );
+  border-radius: 10px;
+  border: 2px solid black;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form.data input,
+form.data textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form.data input[type="submit"] {
+  background: linear-gradient(
+    25deg,
+    #800000,
+    #ffff00,
+    #ffffff,
+    #ffff00,
+    #ffffff,
+    #800000
+  );
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form.data input[type="submit"]:hover {
+  background-color: whitesmoke;
+}
+.footer {
+  background: linear-gradient(45deg, #ffff00, #ffffff, #ffff00, #ffffff);
+  border: 1px solid #ffa800;
+  text-align: center;
+  text-shadow: #ffffff;
+  font-style: italic;
+  font-size: 17px;
+  font-weight: bolder;
+}
+.foot {
+  margin: 0;
+}
+@media screen and (max-width: 700px) {
+  .logo2 {
+    display: none;
+  }
+  .logo1 {
+    width: 100px;
+    align-self: center;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .row4,
+  .row5 {
+    flex-direction: column;
+  }
+  .row1 {
+    flex-direction: column;
+  }
+}
+.left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 40px;
+  padding: 20px 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+}
+.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 40px;
+  padding: 20px 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+}
+/* Mobile & small screens */
+
+form.data {
+  width: 90%; /* Almost full width */
+  max-width: 400px; /* Avoid being too wide */
+  padding: 15px; /* More touch space */
+  font-size: 16px;
+  margin: 10px auto; /* Center form */
+}
+
+form.data label {
+  display: block; /* Force labels above inputs */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form.data input,
+form.data textarea {
+  width: 100%; /* Fill available space */
+  font-size: 15px; /* Slightly bigger for readability */
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+form.data input[type="submit"] {
+  padding: 10px;
+  width: 100%; /* Full-width button for easy tap */
+  font-size: 16px;
+}
