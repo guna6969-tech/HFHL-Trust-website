@@ -24,3 +24,10 @@ window.onload = function () {
           image.src = arr[count];
         }, 9000);
       };
+const hamburger = document.getElementById("hamburger");
+const navBar = document.querySelector(".nav-bar");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navBar.classList.toggle("active");
+});
